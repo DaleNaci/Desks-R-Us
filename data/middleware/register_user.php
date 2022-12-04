@@ -1,7 +1,7 @@
 <?php
     require_once("../backend/add_user.php");
 
-    
+
     add_user(
         $_POST["first-name"],
         $_POST["last-name"],
@@ -10,5 +10,5 @@
         $_POST["phone-num"]
     );
 
-
+    header("Location: ../frontend/home_screen.html");
 ?>
