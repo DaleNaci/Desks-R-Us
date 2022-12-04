@@ -1,17 +1,21 @@
 <html>
-    <head></head>
+    <head>
+        <title>Desls-R-Us</title>
+    </head>
+
     <body>
         <button type="button" id="login-btn">Login</button>
         <button type="button" id="register-btn">Register</button>
+    
+        <script type="text/javascript">
+            document.getElementById("register-btn").onclick = function () {
+                location.href = "data/frontend/register.html";
+            }
+    
+            document.getElementById("login-btn").onclick = function() {
+                location.href = "data/frontend/login.html";
+            }
+        </script>
+    
     </body>
-
-    <script type="text/javascript">
-        document.getElementById("register-btn").onclick = function () {
-            location.href = "data/frontend/register.html";
-        }
-
-        document.getElementById("login-btn").onclick = function() {
-            location.href = "data/frontend/login.html";
-        }
-    </script>
 </html>
