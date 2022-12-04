@@ -3,7 +3,5 @@
 
     if (isset($_POST["test"])) {
         $_POST["test"] = "Test_String";
-
-        add_user();
     }
 ?>
