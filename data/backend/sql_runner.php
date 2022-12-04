@@ -13,7 +13,7 @@
         if (mysqli_connect_errno()) {
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
-    
+
         $res = mysqli_query($db, $sql_statement);
 
         if (starts_with(trim($sql_statement), "SELECT")) {
@@ -22,7 +22,7 @@
             while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
                 array_push($rtn, $row);
             }
-            
+
             return $rtn;
         }
     }

@@ -10,26 +10,24 @@
     </head>
 
     <body>
-        <button type="button" id="create-shipping-address-btn">Create Shipping Address</button>
+        <button type="button" id="create-credit-card-btn">Add Credit Card</button>
 
         <table>
             <tr>
-                <th>Address Name</th>
-                <th>Recipient Name</th>
-                <th>Street #</th>
-                <th>Street Name</th>
-                <th>Zip Code</th>
-                <th>City</th>
-                <th>Country</th>
-                <th>State</th>
+                <th>Card #</th>
+                <th>Security #</th>
+                <th>Card Owner Name</th>
+                <th>Card Type</th>
+                <th>Billing Address</th>
+                <th>Expiration Date</th>
             </tr>
         <?php
-            require_once("../middleware/shipping_address_modifier.php");
+            require_once("../middleware/credit_card_modifier.php");
 
 
-            $shipping_address_data = get_shipping_addresses();
+            $credit_card_data = get_credit_cards();
 
-            foreach ($shipping_address_data as $row) {
+            foreach ($credit_card_data as $row) {
                 echo "<tr>";
             
                 foreach ($row as $item) {
@@ -44,8 +42,8 @@
         <button type="button" id="back-button">Back</button>
         
         <script type="text/javascript">
-            document.getElementById("create-shipping-address-btn").onclick = function () {
-                location.href = "create_shipping_address.html";
+            document.getElementById("create-credit-card-btn").onclick = function () {
+                location.href = "create_credit_card.html";
             }
             document.getElementById("back-button").onclick = function () {
                 location.href = "home_screen.html";

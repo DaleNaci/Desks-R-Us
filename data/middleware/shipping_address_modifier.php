@@ -14,6 +14,8 @@
             $_POST["country"],
             $_POST["state"]
         );
+
+        header("Location: ../frontend/shipping_addresses.php");
     }
 
     function get_shipping_addresses() {
