@@ -7,11 +7,11 @@
 
     <script type="text/javascript">
         document.getElementById("register-btn").onclick = function () {
-            location.href = "pages/register.php";
+            location.href = "data/pages/register.php";
         }
 
         document.getElementById("login-btn").onclick = function() {
-            location.href = "pages/login.php";
+            location.href = "data/pages/login.php";
         }
     </script>
 </html>
