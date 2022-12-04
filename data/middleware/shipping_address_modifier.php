@@ -7,6 +7,7 @@
             $_POST["shipping-address-name"],
             $_POST["recipient-name"],
             $_POST["street-num"],
+            $_POST["street-name"],
             $_POST["zip-code"],
             $_POST["city"],
             $_POST["country"],
