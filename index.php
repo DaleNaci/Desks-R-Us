@@ -1,7 +1,3 @@
-<html lang="en">
-    <head>
-    </head>
-    <body>
-        Hello fasdfasdf
-    </body>
-</html>
+<?php
+    include("pages/home_screen.php");
+?>
