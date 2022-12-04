@@ -28,7 +28,7 @@
                          '$city',
                          '$country',
                          '$state'
-                        )
+                        );
         ");
     }
 ?>
