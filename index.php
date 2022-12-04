@@ -1,3 +1,3 @@
 <?php
-    include("pages/home_screen.php");
+    include("pages/home_screen.php"); 
 ?>
