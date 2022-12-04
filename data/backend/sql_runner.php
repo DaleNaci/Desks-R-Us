@@ -1,5 +1,6 @@
 <?php
-    require("../helper_functions.php");
+    require_once("../helper_functions.php");
+
 
     function run_sql($sql_statement) {
         $db_server_name = "localhost";
