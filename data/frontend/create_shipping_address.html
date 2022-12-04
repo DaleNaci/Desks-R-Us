@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Desks-R-Us</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <h1>Add Shipping Address</h1>
+
+        <div class="container">
+            <form name="form" method="post" action="../middleware/shipping_address_modifier.php">
+                <label class="label--margin-above">Shipping Address Name:</label>
+                <input type="text" id="shipping-address-name" name="shipping-address-name">
+
+                <br>
+
+                <label class="label--margin-above">Recipient Name:</label>
+                <input type="text" id="recipient-name" name="recipient-name">
+
+                <br>
+
+                <label class="label--margin-above">Street Number:</label>
+                <input type="text" id="street-num" name="street-num">
+
+                <br>
+
+                <label class="label--margin-above">Zip Code:</label>
+                <input type="text" id="zip-code" name="zip-code">
+
+                <br>
+
+                <label class="label--margin-above">City:</label>
+                <input type="text" id="city" name="city">
+
+                <br>
+
+                <label class="label--margin-above">Country:</label>
+                <input type="text" id="country" name="country">
+
+                <br>
+
+                <label class="label--margin-above">State:</label>
+                <input type="text" id="state" name="state">
+
+                <br>
+
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

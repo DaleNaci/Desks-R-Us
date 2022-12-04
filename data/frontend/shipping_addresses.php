@@ -8,11 +8,11 @@
     </head>
 
     <body>
-        <button type="button" id="add-shipping-address-btn">Add Shipping Address</button>
+        <button type="button" id="create-shipping-address-btn">Create Shipping Address</button>
         
         <script type="text/javascript">
-            document.getElementById("add-shipping-address-btn").onclick = function () {
-                location.href = "add_shipping_address.html";
+            document.getElementById("create-shipping-address-btn").onclick = function () {
+                location.href = "create_shipping_address.html";
             }
         </script>
     </body>
