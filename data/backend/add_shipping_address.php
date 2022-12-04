@@ -31,15 +31,4 @@
                         )
         ");
     }
-
-    add_shipping_address(
-        "sa_name",
-        "rec",
-        999,
-        "street_name",
-        "zip",
-        "city",
-        "country",
-        "state"
-    );
 ?>
