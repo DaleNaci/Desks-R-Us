@@ -16,8 +16,14 @@
     
         $res = mysqli_query($db, $sql_statement);
 
-        if (starts_with($sql_statement, "SELECT")) {
-            return mysqli_fetch_array($res, MYSQLI_ASSOC);
+        if (starts_with(trim($sql_statement), "SELECT")) {
+            $rtn = array();
+
+            while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+                array_push($rtn, $row);
+            }
+            
+            return $rtn;
         }
     }
 ?>
