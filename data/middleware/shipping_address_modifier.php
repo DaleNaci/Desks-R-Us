@@ -16,7 +16,7 @@
         );
     }
 
-    function get_shipping_addresses() (
+    function get_shipping_addresses() {
         $rtn = array();
 
         $sa_data = get_all_shipping_addresses();
@@ -37,5 +37,5 @@
         }
 
         return $rtn;
-    )
+    }
 ?>

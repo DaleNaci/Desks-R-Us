@@ -1,5 +1,8 @@
 <?php
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    $_SESSION["cid"] = 10;
 ?>
 
 <html>
@@ -25,7 +28,7 @@
             require_once("../middleware/shipping_address_modifier.php");
 
 
-            $shipping_address_data = get_shipping_address();
+            $shipping_address_data = get_shipping_addresses();
 
             foreach ($shipping_address_data as $row) {
                 echo "<tr>";
