@@ -1,4 +1,6 @@
 <?php
+    require("helper_functions.php");
+
     function run_sql($sql_statement) {
         $db_server_name = "localhost";
         $db_username = "root";
@@ -11,6 +13,10 @@
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
     
-        mysqli_query($db, $sql_statement);
+        $res = mysqli_query($db, $sql_statement);
+
+        if (starts_with($sql_statement, "SELECT")) {
+            return mysqli_fetch_array($res, MYSQLI_ASSOC);
+        }
     }
 ?>

@@ -1,3 +1,3 @@
 <?php
-    include("data/pages/home_screen.html"); 
+    include("data/frontend/home_screen.html"); 
 ?>

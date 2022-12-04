@@ -1,6 +1,9 @@
 <?php
-    require("sql_builders.php");
     require("sql_runner.php");
 
-    run_sql(build_insert_statement("test", "hi"));
+    function add_user() {
+        run_sql("INSERT INTO test VALUES (1)");
+    }
+
+    add_user();
 ?>
