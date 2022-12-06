@@ -46,14 +46,14 @@ CREATE TABLE desks_r_us.storedcard (
 CREATE TABLE desks_r_us.shipaddress (
     SAName varchar(128),
     CID int(8),
-    ReceipientName varchar(32),
+    RecipientName varchar(32),
     SNumber int(8),
     Street varchar(64),
     Zip varchar(10),
     City varchar(32),
     Country varchar(32),
     State varchar(32),
-    PRIMARY KEY (SAName),
+    PRIMARY KEY (SAName, CID),
     FOREIGN KEY (CID) REFERENCES desks_r_us.customer(CID)
 );
 
