@@ -37,7 +37,7 @@
                         echo "<td>" . $row[$j] . "</td>";
                     }
 
-                    echo "<td><input type='number' name='" . $row[6] . "-quantity'></td>";
+                    echo "<td><input type='number' value='0' name='" . $row[6] . "-quantity'></td>";
 
                     echo "</tr>";
                 }

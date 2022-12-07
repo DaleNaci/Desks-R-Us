@@ -100,6 +100,7 @@ CREATE TABLE desks_r_us.cartitem (
     Quantity int(8),
     PriceSold double,
     PRIMARY KEY (CartId, ProductId),
+    FOREIGN KEY (CartId) REFERENCES desks_r_us.cart(CartId),
     FOREIGN KEY (ProductId) REFERENCES desks_r_us.product(ProductId)
 );
 
