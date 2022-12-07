@@ -40,4 +40,17 @@
 
         return $rtn;
     }
+
+
+    function get_shipping_address_names() {
+        $rtn = array();
+
+        $sa_data = get_all_shipping_addresses();
+
+        foreach ($sa_data as $row) {
+            array_push($rtn, $row["SAName"]);
+        }
+
+        return $rtn;
+    }
 ?>

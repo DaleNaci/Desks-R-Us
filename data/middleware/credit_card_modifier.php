@@ -16,12 +16,13 @@
         header("Location: ../frontend/credit_card.php");
     }
 
+
     function get_credit_cards() {
         $rtn = array();
 
-        $sa_data = get_all_credit_cards();
+        $cc_data = get_all_credit_cards();
 
-        foreach ($sa_data as $row) {
+        foreach ($cc_data as $row) {
             $arr = array(
                 $row["CardNumber"],
                 $row["SecNumber"],
@@ -32,6 +33,19 @@
             );
 
             array_push($rtn, $arr);
+        }
+
+        return $rtn;
+    }
+
+
+    function get_credit_card_nums() {
+        $rtn = array();
+
+        $cc_data = get_all_credit_cards();
+
+        foreach ($cc_data as $row) {
+            array_push($rtn, $row["CardNumber"]);
         }
 
         return $rtn;
