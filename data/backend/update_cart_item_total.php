@@ -29,6 +29,4 @@
                    AND ProductId = $product_id;
         ");
     }
-
-    update_cart_item_total(1, 1);
 ?>

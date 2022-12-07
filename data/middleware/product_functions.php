@@ -3,12 +3,13 @@
     require_once("../backend/get_all_product_ids.php");
     require_once("../backend/add_cart_item.php");
     require_once("../backend/check_for_cart.php");
-    require_once("../backend/get_cart_id.php");
+    require_once("../backend/get_current_cart_id.php");
     require_once("../backend/get_product_price.php");
     require_once("../backend/create_cart.php");
     require_once("../backend/check_for_cart_item.php");
     require_once("../backend/add_cart_item_quantity.php");
     require_once("../backend/update_cart_item_total.php");
+    require_once("../backend/update_cart_total.php");
 
 
     if (isset($_POST["add-to-cart"])) {
@@ -24,7 +25,7 @@
                     create_cart();
                 }
 
-                $cart_id = (int)get_cart_id();
+                $cart_id = (int)get_current_cart_id();
                 $price = (double)(get_product_price($product_id)[0]["PPrice"]);
                 
                 if (check_for_cart_item($cart_id, $product_id)) {
@@ -34,6 +35,7 @@
                 }
 
                 update_cart_item_total($cart_id, $product_id);
+                update_cart_total($cart_id);
             }
         }
 

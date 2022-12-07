@@ -18,7 +18,7 @@
                          NULL,
                          $cid,
                          NULL,
-                         NULL,
+                         'user-shopping',
                          NULL,
                          0
                         );

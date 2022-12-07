@@ -6,13 +6,14 @@
     include_once("sql_runner.php");
 
 
-    function get_cart_id() {
+    function get_current_cart_id() {
         $cid = $_SESSION["cid"];
 
         $res = run_sql("
-            SELECT CartId
+            SELECT *
               FROM cart
-             WHERE CID = $cid;
+             WHERE CID = $cid
+                   AND TStatus = 'user-shopping';
         ");
 
         return $res;
