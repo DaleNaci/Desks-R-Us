@@ -74,7 +74,7 @@ CREATE TABLE desks_r_us.cart (
     CID int(8),
     SAName varchar(128),
     TStatus varchar(16),
-    TDate varchar(16),
+    TDate date,
     TotalAmount double,
     PRIMARY KEY (CartId),
     FOREIGN KEY (CardNumber) REFERENCES desks_r_us.storedcard(CardNumber),
