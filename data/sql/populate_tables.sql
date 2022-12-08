@@ -300,3 +300,84 @@ INSERT INTO desks_r_us.bookcase
              "wood",
              "barrister"
             );
+
+
+INSERT INTO desks_r_us.cart
+     VALUES (
+             1,
+             "1111111111111111",
+             1,
+             "Home",
+             "being-delivered",
+             "2022-11-19",
+             90.99
+            );
+
+
+INSERT INTO desks_r_us.cartitem
+     VALUES (
+             1,
+             4,
+             1,
+             120.99
+            );
+
+
+INSERT INTO desks_r_us.cartitem
+     VALUES (
+             1,
+             7,
+             2,
+             62.98    
+            );
+
+
+INSERT INTO desks_r_us.cart
+     VALUES (
+             2,
+             "1111111111111111",
+             1,
+             "Home",
+             "not-delivered",
+             "2022-11-18",
+             34.99
+            );
+
+
+INSERT INTO desks_r_us.cartitem
+     VALUES (
+             2,
+             1,
+             1,
+             34.99    
+            );
+
+
+INSERT INTO desks_r_us.cart
+     VALUES (
+             3,
+             "2222222222222222",
+             2,
+             "Home",
+             "being-delivered",
+             "2022-11-18",
+             153.98
+            );
+
+
+INSERT INTO desks_r_us.cartitem
+     VALUES (
+             3,
+             3,
+             1,
+             32.99    
+            );
+
+
+INSERT INTO desks_r_us.cartitem
+     VALUES (
+             3,
+             4,
+             1,
+             120.99    
+            );
