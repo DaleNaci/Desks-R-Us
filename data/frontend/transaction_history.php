@@ -18,7 +18,7 @@
             $order_history_info = get_order_history();
 
             foreach ($order_history_info as $order) {
-                echo "<div class='table-container='>";
+                echo "<div class='table-container'>";
                     echo "<table>";
                         echo "<tr>";
                             echo "<th>Cart ID</th>";
@@ -26,7 +26,7 @@
                             echo "<th>Address Name</th>";
                             echo "<th>Date</th>";
                             echo "<th>Total Amount</th>";
-                            echo "<th>Status</th";
+                            echo "<th>Status</th>";
                         echo "</tr>";
                         
                         echo "<tr>";
@@ -57,6 +57,8 @@
 
                     echo "</table>";
                 echo "</div>";
+
+                echo "<br><br><br>";
             }
         ?>
 
@@ -91,8 +93,8 @@
                     } else {
                         divs[i].style.display = 'none';
                     }
+                }
             }
-        }
         </script>
     </body>
 </html>
