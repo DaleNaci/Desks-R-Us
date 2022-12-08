@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Desks-R-Us</title>
+    </head>
+
+    <body>
+        <form name="form" method="post" action="../middleware/admin_functions.php">
+            <label for="starting-date">Starting Date:</label>
+            <input type="text" name="starting-date" pattern="\d{4}-\d{2}-\d{2}" />
+
+            <br>
+
+            <label for="starting-date">Ending Date:</label>
+            <input type="text" name="ending-date" pattern="\d{4}-\d{2}-\d{2}" />
+
+            <br>
+
+            <label for="admin-function">Choose an admin function:</label>
+            <select name="admin-function">
+                <option value="most-frequently-sold">Most Frequently Sold</option>
+                <option value="most-distinct-customers">Most Distinct Customers</option>
+                <option value="biggest-spenders">Biggest Spenders</option>
+                <option value="best-zip-codes">Best Zip Codes</option>
+                <option value="average-price-per-type">Average Price Per Type</option>
+            </select>
+
+            <br>
+
+            <input type="submit" name="submit" value="Execute Function">
+
+            <input type="hidden" name="execute-function">
+        </form>
+    </body>
+</html>

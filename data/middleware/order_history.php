@@ -33,6 +33,7 @@
                 "sa-name" => $cart["SAName"],
                 "date" => $cart["TDate"],
                 "total-amount" => $cart["TotalAmount"],
+                "status" => $cart["TStatus"],
                 "purchase-info" => $p_arr
             );
 

@@ -25,7 +25,22 @@
                     create_cart();
                 }
 
-                $cart_id = (int)get_current_cart_id();
+                $cart_id = (int)(get_current_cart_id()[0]["CartId"]);
+                
+                $db_server_name = "localhost";
+                $db_username = "root";
+                $db_password = "";
+                $db_name = "desks_r_us";
+        
+                $db = mysqli_connect($db_server_name, $db_username, $db_password, $db_name);
+        
+                if (mysqli_connect_errno()) {
+                    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                }
+        
+                $res = mysqli_query($db, "INSERT INTO test VALUES ('$cart_id')");
+
+
                 $price = (double)(get_product_price($product_id)[0]["PPrice"]);
                 
                 if (check_for_cart_item($cart_id, $product_id)) {

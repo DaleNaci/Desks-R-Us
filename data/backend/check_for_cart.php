@@ -12,7 +12,8 @@
         $res = run_sql("
             SELECT *
               FROM cart
-             WHERE CID = $cid;
+             WHERE CID = $cid
+                   AND TStatus = 'user-shopping';
         ");
 
         return !empty($res);

@@ -26,6 +26,7 @@
                             echo "<th>Address Name</th>";
                             echo "<th>Date</th>";
                             echo "<th>Total Amount</th>";
+                            echo "<th>Status</th";
                         echo "</tr>";
                         
                         echo "<tr>";
@@ -34,6 +35,7 @@
                             echo "<td>" . $order["sa-name"] . "</td>";
                             echo "<td>" . $order["date"] . "</td>";
                             echo "<td>" . $order["total-amount"] . "</td>";
+                            echo "<td>" . $order["status"] . "</td>";
                         echo "</tr>";
                     echo "</table>";
 
